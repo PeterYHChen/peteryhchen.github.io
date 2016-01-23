@@ -90,7 +90,7 @@ a:hover {
 	padding-top: 80px;
 	padding-bottom: 10px;
 	color: #000000;
-	text-shadow: 0 0 100px rgba(255,255,255,0.9);
+	text-shadow: 0 0 10px rgba(255,255,255,1);
 }
 
 #title-layer p {
@@ -101,7 +101,7 @@ a:hover {
 	text-align: center;
 	font-weight: bold;
 	color: #000000;
-	text-shadow: 0 0 100px rgba(255,255,255,0.9);
+	text-shadow: 0 0 10px rgba(255,255,255,1);
 }
 
 /* Menu */
@@ -177,12 +177,12 @@ a:hover {
 	font-size: 20px;
 	color: #FFFFFF;
 	font-weight: bold;
-	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	text-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 #home-block h2{
 	color: #FFFFFF;
-	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	text-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 #home-block .tag{
@@ -417,6 +417,7 @@ a:hover {
 	padding: 20px 0px;
 	color: #000000;
 	border-bottom: 1px solid #D4D4D4;
+	text-shadow: 0 0 10px rgba(255,255,255,1);
 }
 
 #three-columns .social-title{
