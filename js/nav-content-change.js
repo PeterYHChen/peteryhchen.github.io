@@ -1,5 +1,9 @@
 $(function() {
 
+    $(window).load(function(){
+        $("#loading-page").fadeOut("slow");
+    });
+
     var homeLayer    = $("#home-layer"),
         resumeLayer  = $("#resume-layer"),
         projectLayer = $("#project-layer"),
