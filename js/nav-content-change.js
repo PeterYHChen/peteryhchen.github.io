@@ -1,15 +1,10 @@
-$(function() {      
+$(function() {
 
-    var home         = $("#home"),
-        resume       = $("#resume"),
-        project      = $("project"),
-        about        = $("#about"),
-        contact      = $("contact"),
-        homeLayer    = $("#home-layer"),
+    var homeLayer    = $("#home-layer"),
         resumeLayer  = $("#resume-layer"),
         projectLayer = $("#project-layer"),
         contactLayer = $("#contact-layer"),
-        aboutLayer   = $("#about-layer"),
+        blogLayer   = $("#blog-layer"),
 
         wrapper      = $("#wrapper"),
         navButton    = $(".nav-button"),
@@ -18,29 +13,40 @@ $(function() {
         clikedToken  = null,
         currLayer    = null;
 
-    navButton.click(function(){
+    navButton.click(function(e){
+        e.preventDefault();
         $("html, body").animate({ scrollTop: wrapper.offset().top }, 300, "swing");
 
-        clikedToken = $(this).attr("id")
+        clikedToken = $(this).attr("id");
+
+        // var headerName = document.getElementById("title-layer");
+        // if (clikedToken === "home") {
+        //     headerName.style.color = "rgb(0,0,0)";
+        // }
+        // else {
+        //     headerName.style.color = "140014";
+        // }
+
         if (clikedToken === "home")
             currLayer = homeLayer;
         else if (clikedToken === "resume")
             currLayer = resumeLayer;
         else if (clikedToken === "project")
             currLayer = projectLayer;
-        else if (clikedToken === "about")
-            currLayer = aboutLayer;
+        else if (clikedToken === "blog")
+            currLayer = blogLayer;
         else if (clikedToken === "contact")
             currLayer = contactLayer;
 
         if (currLayer.css("display") == "none") {
             preLayer.hide();
-            preLayer = currLayer;
             currLayer.fadeIn();
+            preLayer = currLayer;
         }
     });
 
-    topButton.click(function(){
+    topButton.click(function(e){
+        e.preventDefault();
         $("html, body").animate({ scrollTop: wrapper.offset().top }, 250, "swing");
     });
 
