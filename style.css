@@ -495,8 +495,16 @@ a:hover {
 	background-repeat: no-repeat;
 }
 
-#three-columns #column3 #googleplus a{
+#three-columns #column3 #linkedin a{
 	margin-left: 30px;
+	background-image: url(images/linkedin.png);
+}
+
+#three-columns #column3 #github a{
+	background-image: url(images/github.png);
+}
+
+#three-columns #column3 #googleplus a{
 	background-image: url(images/googleplus.png);
 }
 
